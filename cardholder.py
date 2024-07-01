@@ -12,7 +12,7 @@ class CardOlder():
     def get_pin():
         return self.pin
     def get_firstname():
-        return self.irstname  
+        return self.firstname  
     def get_lastname():
         return self.lastname
     def get_balance():
