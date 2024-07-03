@@ -2,7 +2,7 @@ from carHolder import cardHolder
 
 def print_menu():
   # Print the options to the user
-  print("Welcome! choose one option from the following ")
+  print("Welcome! choose one option from the following.")
   print("1. Deposit")
   print("2. Withdrawl")
   print("3. Show alance")
@@ -11,7 +11,7 @@ def print_menu():
 
 def deposit(cardHolder):
   try:
-    deposit_amount = float(input("How much do you want to deposit? $"))
+    deposit_amount = float(input("How much would you like to deposit? $"))
     cardHolder.set_balance(cardHolder.get_balance() + deposit_amount)
     print(f"You have sucessfully deposit {deposit_amount}. Your new balance is {str(cardHolder.get_balance())}")
   except:
