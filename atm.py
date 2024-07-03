@@ -44,8 +44,6 @@ if __name__ == "__main__":
   list_of_cardHolders.append(CardHolder("512350378428", 654, "Dolia", "Macron", 1005.56))
 
 # Prompt user for debit card number
-
-
 try:
   debitCardNum = input("Please insert your debit card number")
   debitMatch = [holder for holder in list_of_cardHolders if holder.cardNum == debitCardNum]
@@ -71,7 +69,7 @@ while True:
 
 
 # Print options
-print("Welcome! ", current_user.get_firstname() " :)")
+print("Welcome! ", current_user.get_firstname(), current_user.get_lastname() " :)")
 option = 0
 while (option != 4):
   print_menu()
